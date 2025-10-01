@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+issueTrackerURL = "https://github.com/kvnmtz/head-database/issues"
+license = "ARR"
+
+[[mods]]
+modId = "head_database"
+version = "${version}"
+displayName = "Head Database"
+authors = "3xpl01t"
+description = '''
+A server-side mod that enables players to retrieve all different kinds of textured player heads.
+'''
+#logoFile = ""
+displayTest="IGNORE_ALL_VERSION"
+
+[[dependencies.head_database]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.head_database]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.head_database]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "AFTER"
+side = "BOTH"

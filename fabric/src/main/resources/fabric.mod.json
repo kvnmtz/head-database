@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "head_database",
+  "version": "${version}",
+  "name": "Head Database",
+  "description": "A server-side mod that enables players to retrieve all different kinds of textured player heads.",
+  "authors": [
+    "3xpl01t"
+  ],
+  "contact": {
+    "sources": "https://github.com/kvnmtz/head-database"
+  },
+  "license": "ARR",
+  "icon": "assets/head_database/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.kvnmtz.headdatabase.fabric.HeadDatabaseFabric"
+    ]
+  },
+  "mixins": [
+    "head_database.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  }
+}
